@@ -25,7 +25,6 @@
 
 
 
-
 // 3. Display this in your browser 
 
 // a)  A heading stating “Rules for naming JS variables” 
@@ -47,4 +46,9 @@
 
 
 
+// case sensitive in simple roman urdu
+// "name" != "Name"
 
+const Names = "hassan"
+const names = "Hassan"
+console.log(Names == names);
