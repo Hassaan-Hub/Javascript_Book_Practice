@@ -2,12 +2,17 @@
 // new variable. Show the result in your browser. 
 
 
-let num1 = prompt("pehla number lekho")
-let num2 = prompt("dosra number lekho")
+// let num1 = prompt("Enter your first number")
+// let num2 = prompt("Enter your last number")
 
-num1 = parseFloat(num1);
-num2 = parseFloat(num2);
+// num1 = parseFloat(num1)
+// num2 = parseFloat(num2)
 
-let result = num1 + num2;
+// let sum = num1 + num2
 
-document.write("<p>" + num1 + " aur " + num2 + " ka jama hai: " + result + "</p>")
+// console.log("Sum of " + num1 + " and " + num2 + " is " + sum);
+
+
+
+
+// 
