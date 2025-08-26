@@ -189,3 +189,95 @@
 // document.writeln(`Total Curency in PKR: ${totalRopees}`)
 
 
+
+
+// 10. Write a program to initialize a variable with some 
+// number and do arithmetic in following sequence: 
+// a. Add 5 
+// b. Multiply by 10 
+// c. Divide the result by 2 
+// Perform all calculations in a single expression
+
+
+// var num = 3;
+// var add = num + 5;
+// var multiply = 10;
+// var divide = 2;
+
+// var result = (add * 10) / 2
+
+// document.writeln(result)
+
+
+
+
+// 11. The Age Calculator: Forgot how old someone is? 
+// Calculate it! 
+// a. Store the current year in a variable. 
+// b. Store their birth year in a variable. 
+// c. Calculate their 2 possible ages based on the stored 
+// values. 
+// Output them to the screen like so: “They are either NN or NN 
+// years old”.
+
+
+// var currentYear = 2025;
+// var birthYear = 2007;
+
+// var age1 = currentYear - birthYear
+
+// document.writeln(`Current Year: ${currentYear} </br>`)
+// document.writeln(`Birth Year: ${birthYear} </br>`)
+// document.writeln(`Your Age is: ${age1} </br>`)
+
+
+
+
+// 12. The Geometrizer: Calculate properties of a circle. 
+// a. Store a radius into a variable.
+// b. Calculate the circumference based on the radius, and 
+// output “The circumference is NN”. 
+// (Hint : Circumference of a circle = 2 π r , π = 3.142) 
+// Calculate the area based on the radius, and output “The 
+// area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+
+// var radius = 20;
+// var circumference = 2 * 3.142 * radius
+// var area = 3.142 * (radius * radius)
+
+// document.writeln(`<h2>The Geometrizer</h2> </br>`)
+// document.writeln(`Radius of a Circle: ${radius} </br>`)
+// document.writeln(`The circumference is: ${circumference} </br>`)
+// document.writeln(`The Area is: ${area}`)
+
+
+
+
+// 13. The Lifetime Supply Calculator: Ever wonder how 
+// much a “lifetime supply” of your favorite snack is? 
+// Wonder no more. 
+// a. Store your favorite snack into a variable 
+// b. Store your current age into a variable. 
+// c. Store a maximum age into a variable. 
+// d. Store an estimated amount per day (as a number). 
+// e. Calculate how many would you eat total for the rest of 
+// your life. 
+// Output the result to the screen like so: “You will need 
+// NNNN to last you until the ripe old age of NN”.
+
+
+// var favouriteSnack = "Chocklate Chip"
+// var currentAge = 15;
+// var estimatedMaximum = 65;
+// var perDay = 3;
+
+// var result = (estimatedMaximum - currentAge) * 3;
+
+// document.writeln(`<h1>The Lifetime Supply Calculator</h1> <br>`)
+// document.writeln(`Favourite Snack: ${favouriteSnack} <br>`)
+// document.writeln(`Current Age: ${currentAge} <br>`)
+// document.writeln(`Estimated Maximum Age: ${estimatedMaximum} <br>`)
+// document.writeln(`Amount of Snack per day: ${perDay} <br>`)
+
+// document.writeln(`You will need ${result} chocolate chip to last you unit the ripe old age of ${estimatedMaximum}`)
