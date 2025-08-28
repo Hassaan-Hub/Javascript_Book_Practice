@@ -100,8 +100,13 @@ var totalMarks = totalMarksPerSubject * 3
 var percentage = (totalObtained / totalMarks) * 100
 
 
-// document.writeln(`<tr> <td>${}</td> </tr>`)
-
+document.writeln(`<h2>Mark Sheet</h2>`)
+document.writeln(`<table border= '1' cellpadding='10'>`)
+document.writeln(`<tr> <th>Subject</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>percentage</th> </tr>`)
+document.writeln(`<tr> <td>${subject1}</td> </tr>`)
+document.writeln(`<tr> <td>${subject2}</td> </tr>`)
+document.writeln(`<tr> <td>${subject3}</td> </tr>`)
+document.writeln(`</table>`)
 
 
 
