@@ -91,9 +91,9 @@ var subject3 = prompt("Enter your third subject")
 
 var totalMarksPerSubject = 100;
 
-var obtained1 = prompt("Enter your obtained Marks for " + subject1 + ":")
-var obtained2 = prompt("Enter your obtained Marks for " + subject2 + ":")
-var obtained3 = prompt("Enter your obtained Marks for " + subject3 + ":")
+var obtained1 = +prompt("Enter your obtained Marks for " + subject1 + ":")
+var obtained2 = +prompt("Enter your obtained Marks for " + subject2 + ":")
+var obtained3 = +prompt("Enter your obtained Marks for " + subject3 + ":")
 
 var totalObtained = obtained1 + obtained2 + obtained3
 var totalMarks = totalMarksPerSubject * 3
@@ -103,9 +103,10 @@ var percentage = (totalObtained / totalMarks) * 100
 document.writeln(`<h2>Mark Sheet</h2>`)
 document.writeln(`<table border= '1' cellpadding='10'>`)
 document.writeln(`<tr> <th>Subject</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>percentage</th> </tr>`)
-document.writeln(`<tr> <td>${subject1}</td> </tr>`)
-document.writeln(`<tr> <td>${subject2}</td> </tr>`)
-document.writeln(`<tr> <td>${subject3}</td> </tr>`)
+document.writeln(`<tr> <td>${subject1}</td> <td>${totalMarksPerSubject}</td> <td>${obtained1}</td> <td>${(obtained1 / totalMarksPerSubject) * 100}%</td> </tr>`)
+document.writeln(`<tr> <td>${subject2}</td> <td>${totalMarksPerSubject}</td> <td>${obtained2}</td> <td>${(obtained2 / totalMarksPerSubject) * 100}%</td> </tr>`)
+document.writeln(`<tr> <td>${subject3}</td> <td>${totalMarksPerSubject}</td> <td>${obtained3}</td> <td>${(obtained3 / totalMarksPerSubject) * 100}%</td> </tr>`)
+document.writeln(`<tr> <th>Total</th> <th>${totalMarks}</th> <th>${totalObtained}</th> <th>${percentage.toFixed(2)}%</th> </tr>`)
 document.writeln(`</table>`)
 
 
