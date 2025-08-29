@@ -108,7 +108,3 @@ document.writeln(`<tr> <td>${subject2}</td> <td>${totalMarksPerSubject}</td> <td
 document.writeln(`<tr> <td>${subject3}</td> <td>${totalMarksPerSubject}</td> <td>${obtained3}</td> <td>${(obtained3 / totalMarksPerSubject) * 100}%</td> </tr>`)
 document.writeln(`<tr> <th>Total</th> <th>${totalMarks}</th> <th>${totalObtained}</th> <th>${percentage.toFixed(2)}%</th> </tr>`)
 document.writeln(`</table>`)
-
-
-
-
