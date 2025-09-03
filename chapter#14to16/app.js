@@ -198,9 +198,84 @@
 
 
 
+// 11. Write a program to initialize an array with city names. 
+// Copy 3 array elements from cities array to selectedCities 
+// array.
+
+
+// let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"]
+// document.writeln(`<b>Cities List:</b> ${cities} <br /><br />`)
+
+// let selectedCities = cities.slice(0 , 2)
+// document.writeln(`<b>selected list:</b> ${selectedCities} <br />`)
 
 
 
 
+// 12.  Write a program to create a single string from the 
+// below mentioned array: 
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”]; 
+// (Use array’s join method)
 
 
+// var arr = ["This ", " is ", " my ", " cat"]; 
+
+// document.writeln(arr.join(''))
+
+
+
+
+// 13. Create a new array. Store values one by one in such a way 
+// that you can access the values in the order in which they 
+// were stored. (FIFO-First In First Out) 
+
+
+// let array = []
+
+// array.push("Apple")
+// array.push("Orange")
+// array.push("banana")
+
+// document.writeln(`<h3>Divices:</h3>${array} <br> <br>`)
+// document.writeln(`first output: ${array.shift()} <br>`)
+// document.writeln(`second output: ${array.shift()} <br>`)
+// document.writeln(`third output: ${array.shift()} <br>`)
+
+
+
+
+// 14. Create a new array. Store values one by one in such a way 
+// that you can access the values in reverse order. (Last In
+// First Out)
+
+
+// let reverse = []
+// reverse.push("banana")
+// reverse.push("Orange")
+// reverse.push("Apple")
+
+// document.writeln(`<h3>Divices:</h3>${reverse} <br> <br>`)
+// document.writeln(`first output: ${reverse.pop()} <br>`)
+// document.writeln(`second output: ${reverse.pop()} <br>`)
+// document.writeln(`third output: ${reverse.pop()} <br>`)
+
+
+
+
+// 15. Write a program to store phone manufacturers (Apple, 
+// Samsung, Motorola, Nokia, Sony & Haier) in an array. 
+// Display the following dropdown/select menu in your 
+// browser using document.write() method: 
+
+
+let phoneM = ["Apple", "Samsung", "Vivo", "Redmi", "Realme", "Infinix"]
+
+
+document.writeln(`<h2>Which company you have phone</h2>`)
+document.writeln(`<select>`)
+
+for(let i = 0; i < phoneM.length; i++){
+        document.writeln(`<option>${phoneM[i]}</option>`);
+}
+
+document.writeln(`</select>`)
