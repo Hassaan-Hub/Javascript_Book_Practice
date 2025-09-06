@@ -133,6 +133,55 @@
 
 
 
+// 8. Write a program to identify the largest number in the 
+// given array. 
+// A = [24, 53, 78, 91, 12]. 
+
+
+// let num = [24, 53, 78, 91, 12]
+// let largest = num[0]
+
+// for (let i = 1; i < num.length; i++){
+//     if(num[i] > largest){
+//         largest = num[i]
+//     }
+// }
+
+// document.writeln(`Array items: ${num} <br>`)
+// document.writeln(`The largest number is: ${largest}`)
+
+
+
+
+// 9. Write a program to identify the smallest number in the 
+// given array. 
+// A = [24, 53, 78, 91, 12]
+
+
+// let num1 = [34, 5, 654, 6, 324, 2, 35, 6, 54, 4, 74, 67]
+
+// let largest1 = num1[0]
+
+// for(let j = 1; j <num1.length; j++){
+//     if(num1[j] < largest1){
+//         largest1 = num1[j]
+//     }
+// }
+
+// document.writeln(`Array items: ${num1}<br>`)
+// document.writeln(`The smalles number is: ${largest1}`)
+
+
+
+
+// 10. Write a program to print multiples of 5 ranging 1 to 
+// 100. 
+
+// for (let i = 5; i <= 100; i+=5){
+//     document.writeln(`${i}`)
+// }
+
+
 
 
 
