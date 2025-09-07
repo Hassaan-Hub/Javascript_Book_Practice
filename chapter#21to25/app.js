@@ -115,6 +115,7 @@
 let num2 = "472"
 let numb = Number(num2)
 
+
 document.writeln(`value: ${num2}<br>`)
 document.writeln(`Type: String<br>`)
 document.writeln(`value: ${num2}<br>`)
