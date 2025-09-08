@@ -112,11 +112,141 @@
 // 472. Display the values & types in your browser. 
 
 
-let num2 = "472"
-let numb = Number(num2)
+// let num2 = "472"
+// let numb = Number(num2)
 
 
-document.writeln(`value: ${num2}<br>`)
-document.writeln(`Type: String<br>`)
-document.writeln(`value: ${num2}<br>`)
-document.writeln(`Type: Number<br>`)
+// document.writeln(`value: ${num2}<br>`)
+// document.writeln(`Type: String<br>`)
+// document.writeln(`value: ${num2}<br>`)
+// document.writeln(`Type: Number<br>`)
+
+
+
+
+// 10. Write a program that takes user input. Convert and 
+// show the input in capital letters. 
+
+
+// let userInput = prompt("Enter your favourite food")
+// let user = userInput.toUpperCase()
+
+// document.writeln(`User input: ${userInput} <br>`);
+// document.writeln(`Upper Case: ${user}`);
+
+
+
+
+// 11. Write a program that takes user input. Convert and 
+// show the input in title case. 
+
+
+// let userInput1 = prompt("Enter your favourite cookie")
+
+// function toTitleCase(str) {
+//     return str
+//         .toLowerCase()
+//         .split(" ")
+//         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//         .join(" ");
+// }
+
+// let titleCase = toTitleCase(userInput1)
+
+
+// document.writeln(`User input: ${userInput1}<br>`)
+// document.writeln(`Title Case: ${titleCase}`)
+
+
+
+
+// 12. Write a program that converts the variable num to 
+// string. 
+// var num = 35.36 ; 
+// Remove the dot to display “3536” display in your browser.
+
+
+// let num = 36.45
+// let str = num.toString()
+// let sti = str.replace(".", "")
+
+// document.writeln(`Number: ${num}<br />`)
+// document.writeln(`Result: ${sti}<br />`)
+
+
+
+
+// 13. Write a program to take user input and store username 
+// in a variable. If the username contains any special symbol 
+// among [@ . , !], prompt the user to enter a valid username. 
+// For character codes of [@ . 
+// Note: 
+// ASCII code of ! is 33 
+// ASCII code of , is 44 
+// ASCII code of . is 46 
+// ASCII code of @ is 64 
+
+
+// // Take user input
+// let username = prompt("Enter your username:");
+
+// // Flag to track invalid username
+// let isValid = true;
+
+// // Check each character using charCodeAt
+// for (let i = 0; i < username.length; i++) {
+//     let charCode = username.charCodeAt(i);
+
+//     if (charCode === 33 || charCode === 44 || charCode === 46 || charCode === 64) {
+//         isValid = false;
+//         break;
+//     }
+// }
+
+// // Show result
+// if (!isValid) {
+//     alert("Please enter a valid username (no special symbols @ . , ! allowed).");
+// } else {
+//     document.write("Valid Username: " + username);
+// }
+
+
+
+
+// 14. You have an array 
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”] 
+// Write a program to enable “search by user input” in an 
+// array. After searching, prompt the user whether the given 
+// item is found in the list or not. 
+// Note: Perform case insensitive search. Whether the user 
+// enters cookie, Cookie, COOKIE or coOkIE, program 
+// should inform about its availability. Example:
+
+
+let A = ["cake", "apple pie", "cookie", "chips", "patties"] 
+
+let userInput2 = prompt("Welcome to ABC bakery. What do you want to order sir/mam ?")
+
+let searchItem = userInput2.toLowerCase()
+
+if(A.includes(searchItem)){
+    alert(`${userInput2} is Available at index ${A.indexOf(searchItem)} in our Bakery.`)
+}else{
+    alert(`We are sorry. ${userInput2} is not available in our Bakery`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
