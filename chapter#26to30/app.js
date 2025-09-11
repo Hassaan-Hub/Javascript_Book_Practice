@@ -129,26 +129,3 @@
 // }else{
 //     alert(`sorry! galat guess kia apne or try karo`)
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
