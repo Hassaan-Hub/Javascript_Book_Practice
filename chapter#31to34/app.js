@@ -176,20 +176,3 @@ let diff = curDate - currenDate
 let result = Math.floor(diff / 1000)
 
 document.writeln(`${result} seconds had passed since beginning of 2015`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
