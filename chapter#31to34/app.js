@@ -167,12 +167,13 @@
 // beginning of 2015. 
 
 
-let curDate = new Date()
+let curDate = new Date("Dec 5, 2024 22:50:16")
 
-let currenDate = new Date("Jan 1, 2015")
+let currenDate = new Date("Jan 1, 2015 00:00:00")
 
-let diff = curDate - currenDate
+let diff = curDate.getTime() - currenDate.getTime()
 
 let result = Math.floor(diff / 1000)
 
+document.writeln(`On refrence date Sat ${curDate}<br>`)
 document.writeln(`${result} seconds had passed since beginning of 2015`)
