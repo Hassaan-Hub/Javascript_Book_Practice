@@ -111,3 +111,85 @@
 // document.writeln(`Current Date: ${currentDate}<br>`)
 // document.writeln(`Elapsed minutes since January 1, 1970 ${minutes}<br>`)
 // document.writeln(`Elapsed milliSeconds since January 1, 1970 ${milliSeconds}`)
+
+
+
+
+// 7. Write a program that tests whether it's before noon and 
+// alert “Its AM” else “its PM”.
+
+
+// let currentDate = new Date()
+
+// let currenHour = currentDate.getHours()
+
+// if(currenHour < 12){
+//     alert("It's AM")
+// }else{
+//     alert("It's PM")
+// }
+
+
+
+
+// 8. Write a program that creates a Date object for the last day 
+// of the last month of 2020 and assigns it to variable named 
+// laterDate. 
+
+
+// let currenDate = new Date(2024 , 12 , 0)
+
+// document.writeln(`Letter Date: ${currenDate}`)
+
+
+
+
+// 9. Create a date object of the starting date of this Ramadan 
+// and alert the number of days past since 1st Ramadan? 
+// Note: 1st Ramadan was on June 18, 2015 
+
+
+// let ramadanDate = new Date("June 18 , 2015")
+
+// let today = new Date()
+
+// let diff = today - ramadanDate
+
+// let daysPast = Math.floor(diff / (1000 * 60 * 60 * 24))
+
+// alert(`${daysPast} days have past since 1st ramadan, 2015`)
+
+
+
+
+// 10. Write a program that displays in your browser the 
+// seconds that elapsed between the reference date and the 
+// beginning of 2015. 
+
+
+let curDate = new Date()
+
+let currenDate = new Date("Jan 1, 2015")
+
+let diff = curDate - currenDate
+
+let result = Math.floor(diff / 1000)
+
+document.writeln(`${result} seconds had passed since beginning of 2015`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
