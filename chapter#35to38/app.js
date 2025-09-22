@@ -57,6 +57,34 @@
 
 
 function calculator(num1, num2, operator){
-    let return;
-    
+    let result;
+
+    if(operator === "+"){
+        result = num1 + num2
+    }else if(operator === "-"){
+        result = num1 - num2
+    }else if(operator === "*"){
+        result = num1 * num2
+    }else if(operator === "/"){
+        result = num1 / num2
+    }else if(operator === "%"){
+        result = num1 % num2
+    }else{
+        result = "invalid operator!"
+    }
+
+    return result;
 }
+
+let n1 = +prompt("Enter your first number")
+let n2 = +prompt("Enter your second number")
+let op = prompt("Enter your operator. eg..'+ , - , * , / , %'")
+
+let output = calculator(n1, n2, op)
+
+document.getElementById("calcResult").innerHTML = "Result " + output
+
+
+
+
+
