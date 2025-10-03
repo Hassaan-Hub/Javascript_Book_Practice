@@ -56,33 +56,111 @@
 // show the desired result in your browser. 
 
 
-function calculator(num1, num2, operator){
-    let result;
+// function calculator(num1, num2, operator){
+//     let result;
 
-    if(operator === "+"){
-        result = num1 + num2
-    }else if(operator === "-"){
-        result = num1 - num2
-    }else if(operator === "*"){
-        result = num1 * num2
-    }else if(operator === "/"){
-        result = num1 / num2
-    }else if(operator === "%"){
-        result = num1 % num2
-    }else{
-        result = "invalid operator!"
+//     if(operator === "+"){
+//         result = num1 + num2
+//     }else if(operator === "-"){
+//         result = num1 - num2
+//     }else if(operator === "*"){
+//         result = num1 * num2
+//     }else if(operator === "/"){
+//         result = num1 / num2
+//     }else if(operator === "%"){
+//         result = num1 % num2
+//     }else{
+//         result = "invalid operator!"
+//     }
+
+//     return result;
+// }
+
+// let n1 = +prompt("Enter your first number")
+// let n2 = +prompt("Enter your second number")
+// let op = prompt("Enter your operator. eg..'+ , - , * , / , %'")
+
+// let output = calculator(n1, n2, op)
+
+// document.getElementById("calcResult").innerHTML = "Result " + output
+
+
+
+
+// 5. Write a function that squares its argument. 
+
+
+// function square(num){
+//     return num * num
+// }
+
+// let number = +prompt("Enter your number")
+// let result = square(number)
+
+// document.writeln(result)
+
+
+
+
+// 6. Write a function that computes factorial of a number.
+
+
+// function factorial(num1){
+//     let result = 1;
+//     for(let i = 1; i <= num1; i++){
+//         result = result * i
+//     }
+//     return result;
+// }
+
+// console.log(factorial(3));
+
+
+
+
+// 7. Write a function that take start and end number as inputs 
+// & display counting in your browser. 
+
+
+// function count(start , end){
+//     for(let i = start; i <= end; i++){
+//         document.writeln(`${i} <br />`)
+//     }
+// }
+
+// count(2 , 15)
+
+
+
+
+// 8. Write a nested function that computes hypotenuse of a 
+// right angle triangle.  
+// Hypotenuse2 = Base2 + Perpendicular2 
+// Take base and perpendicular as inputs. 
+// Outer function : calculateHypotenuse() 
+// Inner function: calculateSquare()
+
+
+function calculateHypotenuse(base , perpendicular){
+
+    function square(num){
+        return num * num
     }
 
-    return result;
+    let baseSquare = square(base)
+    let perpendicularSquare = square(perpendicular)
+
+    let hypotenuse = Math.sqrt(baseSquare + perpendicularSquare)
+
+    return hypotenuse
 }
 
-let n1 = +prompt("Enter your first number")
-let n2 = +prompt("Enter your second number")
-let op = prompt("Enter your operator. eg..'+ , - , * , / , %'")
+let result = calculateHypotenuse(3 , 4)
+document.writeln(result)
 
-let output = calculator(n1, n2, op)
 
-document.getElementById("calcResult").innerHTML = "Result " + output
+
+
 
 
 
