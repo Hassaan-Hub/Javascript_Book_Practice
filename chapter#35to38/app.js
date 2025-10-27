@@ -141,28 +141,93 @@
 // Inner function: calculateSquare()
 
 
-function calculateHypotenuse(base , perpendicular){
+// function calculateHypotenuse(base , perpendicular){
 
-    function square(num){
-        return num * num
-    }
+//     function square(num){
+//         return num * num
+//     }
 
-    let baseSquare = square(base)
-    let perpendicularSquare = square(perpendicular)
+//     let baseSquare = square(base)
+//     let perpendicularSquare = square(perpendicular)
 
-    let hypotenuse = Math.sqrt(baseSquare + perpendicularSquare)
+//     let hypotenuse = Math.sqrt(baseSquare + perpendicularSquare)
 
-    return hypotenuse
-}
+//     return hypotenuse
+// }
 
-let result = calculateHypotenuse(3 , 4)
-document.writeln(result)
-
-
+// let result = calculateHypotenuse(3 , 4)
+// document.writeln(result)
 
 
 
 
+// 9. Write a function that calculates the area of a rectangle. 
+// A = width * height 
+// Pass width and height in following manner: 
+// i. Arguments as value 
+// ii. Arguments as variables
 
 
+// function calculate(width , height){
+//     let result = width * height
+//     return result
+// }
+
+// let calcResult = calculate(2 , 5)
+// document.writeln(`Area of rectangle: ${calcResult}`)
+
+
+
+
+// 10. Write a JavaScript function that checks whether a passed 
+// string is palindrome or not?   
+// A palindrome is word, phrase, or sequence that reads the same backward as 
+// forward, e.g., madam. 
+
+
+// function isPalindrome(str){
+//     str = str.toLowerCase()
+    
+//     let reversed = str.split('').reverse().join('')
+
+//     if(str === reversed){
+//         return str + " is a Palindrome.";
+//     }else{
+//         return str + " is not a Palindrome.";
+//     }
+// }
+
+// console.log(isPalindrome("hello"));
+// console.log(isPalindrome("madam"));
+
+
+
+
+// 11. Write a JavaScript function that accepts a string as a 
+// parameter and converts the first letter of each word of the 
+// string in upper case.  
+// EXAMPLE STRING : 'the quick brown fox'  
+// EXPECTED OUTPUT : 'The Quick Brown Fox' 
+
+
+// function capitalizeWords(str){
+//     let words = str.split(" ")
+
+//     for(let i = 0; i < words.length; i++){
+//         let word = words[i];
+//         words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+//     }
+//     return words.join(" ")
+// }
+
+// let resul = capitalizeWords("the quick brown fox")
+// document.writeln(resul)
+
+
+
+
+// 12. Write a JavaScript function that accepts a string as a 
+// parameter and find the longest word within the string.  
+// EXAMPLE STRING : 'Web Development Tutorial'  
+// EXPECTED OUTPUT : 'Development'
 
