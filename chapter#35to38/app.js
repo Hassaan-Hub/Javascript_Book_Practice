@@ -16,18 +16,14 @@
 // greets the user using his full name. 
 
 
-// function greetUser(firstName , lastName){
-//     let fullName = firstName + " " + lastName
+// function userGreet(firstName , lastName){
+//     let fullName = firstName + " " + lastName;
 
-//     document.getElementById("greeting").innerHTML = "Hello " + fullName + "!"
-
+//     document.getElementById("output").innerHTML = "Hello " + fullName + "!"
 // }
-
-// let greet = prompt("enter your first name")
-// let greet1 = prompt("enter your last name")
-
-// greetUser(greet , greet1)
-
+// let name1 = prompt("Enter your first name")
+// let name2 = prompt("Enter your last name")
+// userGreet(name1 , name2)
 
 
 
@@ -36,16 +32,15 @@
 
 
 // function addTwoNumbers(){
-//     let num = +prompt("Enter your first Number")
-//     let num1 = +prompt("Enter your last Number")
-
-//     let sum = num + num1
+//     let num1 = +prompt("Enter your first number");
+//     let num2 = +prompt("Enter your last number");
+    
+//     let sum = num1 + num2;
 
 //     return sum;
 // }
-
-// let total = addTwoNumbers()
-// document.getElementById("result").innerHTML = "The sum number is " + total
+// let total = addTwoNumbers();
+// document.getElementById("result").innerHTML = "The result is: " + total
 
 
 
@@ -60,29 +55,22 @@
 //     let result;
 
 //     if(operator === "+"){
-//         result = num1 + num2
+//         result = num1 + num2;
 //     }else if(operator === "-"){
-//         result = num1 - num2
+//         result = num1 - num2;
 //     }else if(operator === "*"){
-//         result = num1 * num2
+//         result = num1 * num2;
 //     }else if(operator === "/"){
-//         result = num1 / num2
-//     }else if(operator === "%"){
-//         result = num1 % num2
-//     }else{
-//         result = "invalid operator!"
+//         result = num1 / num2;
 //     }
-
 //     return result;
 // }
+// let op1 = +prompt("Enter your fist number");
+// let op2 = +prompt("Enter your last number");
+// let op3 = prompt("Enter one of this (+, -, *, /)");
 
-// let n1 = +prompt("Enter your first number")
-// let n2 = +prompt("Enter your second number")
-// let op = prompt("Enter your operator. eg..'+ , - , * , / , %'")
-
-// let output = calculator(n1, n2, op)
-
-// document.getElementById("calcResult").innerHTML = "Result " + output
+// let output = calculator(op1, op2, op3);
+// document.getElementById("calcResult").innerHTML = "Result is: " + output
 
 
 

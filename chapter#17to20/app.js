@@ -124,7 +124,7 @@
 
 // let order = prompt("Welcome to ABC Bakery. What do you want to order?")
 
-// if(A.indexOf(order)){
+// if(A.indexOf(order) !== -1){
 //     alert(`${order} is available at index ${A.indexOf(order)} in our Bakery`)
 // }else{
 //     alert(`we are sorry. ${order} is not available in our Bakery.`)
