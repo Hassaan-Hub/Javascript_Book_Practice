@@ -4,7 +4,7 @@
 
 // let currentDate = new Date()
 
-// document.writeln(currentD)
+// document.writeln(currentDate)
 
 
 
@@ -13,18 +13,16 @@
 // For example December. 
 
 
-// let currentDate = new Date()
+// var date =  new Date()
+// var month = date.getMonth()
 
-// let nameIndex = currentDate.getMonth()
-
-// let monthNames = [
+// var monthNames = [
 //     "January","Feburary","March","April","May","June",
 //     "July","August","September","October","November","December"
-// ];
+// ]
 
-// let currentMonth = monthNames[nameIndex];
-
-// document.writeln(`Current Month is: ${currentMonth}`)
+// var indMon = monthNames[month]
+// console.log(indMon);
 
 
 
@@ -34,14 +32,13 @@
 // Sun. 
 
 
-// let currentDate = new Date()
-// let weekIndex = currentDate.getDay()
+// var date = new Date();
+// var weekInd = date.getDay()
 
 // let weekNames = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Set"]
+// var res = weekNames[weekInd]
 
-// let currentDay = weekNames[weekIndex]
-
-// document.writeln(`Current Day is: ${currentDay}`)
+// console.log(res);
 
 
 
@@ -50,20 +47,16 @@
 // its Saturday or Sunday today. 
 
 
-// let currentDate = new Date()
-
-// let nameIndex = currentDate.getDay()
-
+// var date = new Date()
+// var day = date.getDay()
 
 // let weekNames = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Set"]
+// var indDay = weekNames[day]
 
-// let currentDay = weekNames[nameIndex]
-
-
-// if(currentDay === "Sun" || currentDay === "Set"){
-//     alert(`${currentDay} Its fun day`)
+// if(indDay == "Wed"){
+//     alert("Let's go to sleep early")
 // }else{
-//     alert(`${currentDay} Its work day`)
+//     alert("Its time sleep")
 // }
 
 
@@ -74,25 +67,22 @@
 // else shows “Last days of the month”. 
 
 
-// let currentDate = new Date()
+// var date = new Date()
+// var month = date.getMonth()
 
-// let nameIndex = currentDate.getMonth()
-
-// if(nameIndex <= 15){
-//     alert("First fifteen days of the month");
+// if(month < 16){
+//     alert("Fist fifteen days of the month")
 // }else{
 //     alert("Last days of the month")
 // }
 
-// let monthNames = [
+// var monthNames = [
 //     "January","Feburary","March","April","May","June",
 //     "July","August","September","October","November","December"
-// ];
+// ]
 
-// let currentMonth = monthNames[nameIndex]
-
-// document.writeln(`Current Month is: ${currentMonth}`)
-
+// var indMon = monthNames[month]
+// document.write(`Current Month of this year: ${indMon}`)
 
 
 
@@ -247,45 +237,45 @@
 // & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge 
 
 
-// K-Electric Bill
-let customerName = prompt("Enter your name")
+// // K-Electric Bill
+// let customerName = prompt("Enter your name")
 
-let currentMonth = prompt("Enter current month", "September")
+// let currentMonth = prompt("Enter current month", "September")
 
-let units = parseFloat(prompt("Enter your units", "410"))
-if (isNaN(units)) units = 0;
+// let units = parseFloat(prompt("Enter your units", "410"))
+// if (isNaN(units)) units = 0;
 
-let chargesPerUnit = parseFloat(prompt("Charges per unit (PKR):", "16"))
-if(isNaN(chargesPerUnit)) chargesPerUnit = 0;
+// let chargesPerUnit = parseFloat(prompt("Charges per unit (PKR):", "16"))
+// if(isNaN(chargesPerUnit)) chargesPerUnit = 0;
 
-let latePaymentSurcharge = parseFloat(prompt("Late payment Surcharge (PKR):", "350"))
-if(isNaN(latePaymentSurcharge)) latePaymentSurcharge = 0;
+// let latePaymentSurcharge = parseFloat(prompt("Late payment Surcharge (PKR):", "350"))
+// if(isNaN(latePaymentSurcharge)) latePaymentSurcharge = 0;
 
-// calculation
-let netAmount = units * chargesPerUnit
-let grossAmount = latePaymentSurcharge + netAmount
+// // calculation
+// let netAmount = units * chargesPerUnit
+// let grossAmount = latePaymentSurcharge + netAmount
 
-// 3) Format for display (2 decimal places)
-let chargesDisplay = chargesPerUnit.toFixed(2)
-let netDisplay = netAmount.toFixed(2)
-let lateDisplay = latePaymentSurcharge.toFixed(2)
-let grossDisplay = grossAmount.toFixed(2)
+// // 3) Format for display (2 decimal places)
+// let chargesDisplay = chargesPerUnit.toFixed(2)
+// let netDisplay = netAmount.toFixed(2)
+// let lateDisplay = latePaymentSurcharge.toFixed(2)
+// let grossDisplay = grossAmount.toFixed(2)
 
-// 4) Display nicely in the browser
-document.writeln(`<h1>K-Electric Bill<h1>`)
-document.writeln("<p><strong>Customer Name:</strong>" + (customerName || "N/A") + "</p>")
-document.writeln("<p><strong>Customer Month:</strong>" + (currentMonth || "N/A") + "</p>")
+// // 4) Display nicely in the browser
+// document.writeln(`<h1>K-Electric Bill<h1>`)
+// document.writeln("<p><strong>Customer Name:</strong>" + (customerName || "N/A") + "</p>")
+// document.writeln("<p><strong>Customer Month:</strong>" + (currentMonth || "N/A") + "</p>")
 
-document.writeln(`<table border='1' cellpadding='6' cellspacing='0'>`)
-document.writeln(`<tr> <td>Number of unit</td> <td>${units}</td> </tr>`)
-document.writeln(`<tr> <td>Charge per unit</td> <td>${chargesDisplay}</td> </tr>`)
-document.writeln(`<tr> <td>Amount Payable (within due date)</td> <td>${netDisplay} PKR</td> </tr>`)
-document.writeln(`<tr> <td>Late payment surcharge</td> <td>${lateDisplay} PKR</td> </tr>`)
-document.writeln(`<tr> <td> <strong>Gross Amount (After due Date)</strong> </td> <td>${grossAmount} PKR</td> </tr>`)
-document.writeln(`</table>`)
+// document.writeln(`<table border='1' cellpadding='6' cellspacing='0'>`)
+// document.writeln(`<tr> <td>Number of unit</td> <td>${units}</td> </tr>`)
+// document.writeln(`<tr> <td>Charge per unit</td> <td>${chargesDisplay}</td> </tr>`)
+// document.writeln(`<tr> <td>Amount Payable (within due date)</td> <td>${netDisplay} PKR</td> </tr>`)
+// document.writeln(`<tr> <td>Late payment surcharge</td> <td>${lateDisplay} PKR</td> </tr>`)
+// document.writeln(`<tr> <td> <strong>Gross Amount (After due Date)</strong> </td> <td>${grossAmount} PKR</td> </tr>`)
+// document.writeln(`</table>`)
 
-// Optional: also show a short alert
-alert("Bill calculated - chack page for details:")
+// // Optional: also show a short alert
+// alert("Bill calculated - chack page for details:")
 
 
 
