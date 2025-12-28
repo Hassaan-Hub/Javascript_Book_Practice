@@ -201,16 +201,14 @@
 // function capitalizeWords(str){
 //     let words = str.split(" ")
 
-//     for(let i = 0; i < words.length; i++){
+//     for (var i = 0; i < words.length; i++){
 //         let word = words[i];
 //         words[i] = word.charAt(0).toUpperCase() + word.slice(1);
 //     }
 //     return words.join(" ")
 // }
-
-// let resul = capitalizeWords("the quick brown fox")
-// document.writeln(resul)
-
+// let result = capitalizeWords("heelo how can i help you sir")
+// document.write(result)
 
 
 
@@ -218,4 +216,28 @@
 // parameter and find the longest word within the string.  
 // EXAMPLE STRING : 'Web Development Tutorial'  
 // EXPECTED OUTPUT : 'Development'
+
+
+// function findLongestWord(str) {
+//     let words = str.split(" ")
+//     let longest = "";
+
+//     for(let i = 0; i < words.length; i++){
+//         if(words[i].length > longest.length){
+//             longest = words[i]
+//         }
+//     }
+//     return longest;
+// }
+
+// let result = findLongestWord("hello hasssaan kaise hon ap")
+// document.write(result)
+
+
+
+
+
+
+
+
 

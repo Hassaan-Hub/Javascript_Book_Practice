@@ -238,44 +238,44 @@
 
 
 // // K-Electric Bill
-// let customerName = prompt("Enter your name")
+let customerName = prompt("Enter your name")
 
-// let currentMonth = prompt("Enter current month", "September")
+let currentMonth = prompt("Enter current month", "September")
 
-// let units = parseFloat(prompt("Enter your units", "410"))
-// if (isNaN(units)) units = 0;
+let units = parseFloat(prompt("Enter your units", "410"))
+if (isNaN(units)) units = 0;
 
-// let chargesPerUnit = parseFloat(prompt("Charges per unit (PKR):", "16"))
-// if(isNaN(chargesPerUnit)) chargesPerUnit = 0;
+let chargesPerUnit = parseFloat(prompt("Charges per unit (PKR):", "16"))
+if(isNaN(chargesPerUnit)) chargesPerUnit = 0;
 
-// let latePaymentSurcharge = parseFloat(prompt("Late payment Surcharge (PKR):", "350"))
-// if(isNaN(latePaymentSurcharge)) latePaymentSurcharge = 0;
+let latePaymentSurcharge = parseFloat(prompt("Late payment Surcharge (PKR):", "350"))
+if(isNaN(latePaymentSurcharge)) latePaymentSurcharge = 0;
 
-// // calculation
-// let netAmount = units * chargesPerUnit
-// let grossAmount = latePaymentSurcharge + netAmount
+// calculation
+let netAmount = units * chargesPerUnit
+let grossAmount = latePaymentSurcharge + netAmount
 
-// // 3) Format for display (2 decimal places)
-// let chargesDisplay = chargesPerUnit.toFixed(2)
-// let netDisplay = netAmount.toFixed(2)
-// let lateDisplay = latePaymentSurcharge.toFixed(2)
-// let grossDisplay = grossAmount.toFixed(2)
+// 3) Format for display (2 decimal places)
+let chargesDisplay = chargesPerUnit.toFixed(2)
+let netDisplay = netAmount.toFixed(2)
+let lateDisplay = latePaymentSurcharge.toFixed(2)
+let grossDisplay = grossAmount.toFixed(2)
 
-// // 4) Display nicely in the browser
-// document.writeln(`<h1>K-Electric Bill<h1>`)
-// document.writeln("<p><strong>Customer Name:</strong>" + (customerName || "N/A") + "</p>")
-// document.writeln("<p><strong>Customer Month:</strong>" + (currentMonth || "N/A") + "</p>")
+// 4) Display nicely in the browser
+document.writeln(`<h1>K-Electric Bill<h1>`)
+document.writeln("<p><strong>Customer Name:</strong>" + (customerName || "N/A") + "</p>")
+document.writeln("<p><strong>Customer Month:</strong>" + (currentMonth || "N/A") + "</p>")
 
-// document.writeln(`<table border='1' cellpadding='6' cellspacing='0'>`)
-// document.writeln(`<tr> <td>Number of unit</td> <td>${units}</td> </tr>`)
-// document.writeln(`<tr> <td>Charge per unit</td> <td>${chargesDisplay}</td> </tr>`)
-// document.writeln(`<tr> <td>Amount Payable (within due date)</td> <td>${netDisplay} PKR</td> </tr>`)
-// document.writeln(`<tr> <td>Late payment surcharge</td> <td>${lateDisplay} PKR</td> </tr>`)
-// document.writeln(`<tr> <td> <strong>Gross Amount (After due Date)</strong> </td> <td>${grossAmount} PKR</td> </tr>`)
-// document.writeln(`</table>`)
+document.writeln(`<table border='1' cellpadding='6' cellspacing='0'>`)
+document.writeln(`<tr> <td>Number of unit</td> <td>${units}</td> </tr>`)
+document.writeln(`<tr> <td>Charge per unit</td> <td>${chargesDisplay}</td> </tr>`)
+document.writeln(`<tr> <td>Amount Payable (within due date)</td> <td>${netDisplay} PKR</td> </tr>`)
+document.writeln(`<tr> <td>Late payment surcharge</td> <td>${lateDisplay} PKR</td> </tr>`)
+document.writeln(`<tr> <td> <strong>Gross Amount (After due Date)</strong> </td> <td>${grossAmount} PKR</td> </tr>`)
+document.writeln(`</table>`)
 
-// // Optional: also show a short alert
-// alert("Bill calculated - chack page for details:")
+// Optional: also show a short alert
+alert("Bill calculated - chack page for details:")
 
 
 
