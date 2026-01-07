@@ -15,20 +15,22 @@
 // determine whether the year is a leap year or not.
 // Leap years ..., 2012, 2016, 2020, …
 
-function checkLeapYear(year){
-    if(year % 4 === 0){
-        document.write(`${year} is a leap year`)
-    } else if(year % 400 === 0){
-        document.write(`${year} is a leap1 year`)
-    } else if(year % 100 === 0){
-        document.write(`${year} is a not leap year`)
-    } else{
-        document.write(`${year} is a not leap year`)
-    }
-}
+// function isLeapYear(year) {
+//     year = Number(year);
+//     if (year % 400 === 0) {
+//         document.write(`${year} is a leap year`);
+//     }else if (year % 100 === 0){
+//         document.write(`${year} is not a leap year`);
+//     }else if (year % 4 === 0){
+//         document.write(`${year} is a leap year`);
+//     }else{
+//         alert(`${year} is not a leap year`);
+//     }
+// }
 
-var year1 = prompt("Enter a year")
-checkLeapYear(year1)
+// var user = prompt("Enter a year");
+
+// isLeapYear(user);
 
 // 3. If the lengths of the sides of a triangle are denoted by a, b, and
 // c, then area of triangle is given by
@@ -44,3 +46,9 @@ checkLeapYear(year1)
 
 // var result = triangleArea(4, 5, 7)
 // document.write(`Area of triangle: ${result}`)
+
+
+
+var area = Math.sqrt(4)
+console.log(area);
+
