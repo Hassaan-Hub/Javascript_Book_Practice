@@ -49,6 +49,70 @@
 
 
 
-var area = Math.sqrt(4)
-console.log(area);
+
+// 4. Write a function that receives marks received by a student in 3
+// subjects and returns the average and percentage of these
+// marks. there should be 3 functions one is the mainFunction
+// and other are for average and percentage. Call those functions
+// from mainFunction and display result in mainFunction.
+
+
+// function calculateAverage(m1, m2, m3){
+//     return (m1 + m2 + m3) / 3
+// }
+
+// function calculatePercentage(m1, m2, m3){
+//     var totalMarks = 300;
+//     var obtainedMarks = m1 + m2 + m3;
+
+//     var percentage = (obtainedMarks / totalMarks) * 100
+    
+//     return percentage;
+// }
+
+// function mainFunction(){
+//     var marks1 = 80;
+//     var marks2 = 70;
+//     var marks3 = 90;
+
+//     var average = calculateAverage(marks1, marks2, marks3)
+//     var percentage = calculatePercentage(marks1, marks2, marks3)
+
+//     console.log(`Average: ${average}%`);
+//     console.log(`percentage: ${percentage}%`);
+// }
+
+// mainFunction()
+
+
+
+
+// 5. You have learned the function indexOf. Code your own custom
+// function that will perform the same functionality. You can code
+// for single character as of now.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
