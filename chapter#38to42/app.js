@@ -92,9 +92,19 @@
 // for single character as of now.
 
 
-
-
-
+// function characterIndexOf(stri, char){
+//     for(var i = 0; i < stri.length; i++){
+//         if(stri[i] === char){
+//             return stri[i]
+//         }else{
+//             console.log("Unvalid");
+//         }
+//     }
+//     return -1
+// }
+// var nam = "imran"
+// var result = characterIndexOf(nam, "k")
+// console.log(result);
 
 
 
