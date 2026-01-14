@@ -223,3 +223,25 @@
 
 
 
+
+// function calculateNotes(amount){
+//     var notes100 = Math.floor(amount / 100)
+//     var remaining = notes100 % 100
+
+//     var notes50 = Math.floor(amount / 50)
+//     remaining = notes50 % 50
+
+//     var notes10 = Math.floor(amount)
+//     remaining = notes10 % 10
+
+//     console.log(`100 Rs Notes: ${notes100}`);
+//     console.log(`50 Rs Notes: ${notes50}`);
+//     console.log(`10 Rs Notes: ${notes10}`);
+    
+//     if(remaining > 0){
+//         console.log(`Remaining amount that cannot be given in available notes: ${remaining}`);
+//     }
+// }
+
+// var withdraweAmount = parseFloat(prompt("Enter your withdrawe amount.."))
+// calculateNotes(withdraweAmount)
