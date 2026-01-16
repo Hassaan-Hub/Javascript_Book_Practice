@@ -26,14 +26,30 @@
 
 
 
-function deleteRow(button){
-    button.parentNode.parentNode.style.display = "none"
-}
+// function deleteRow(button){
+//     button.parentNode.parentNode.style.display = "none"
+// }
 
 
-function deleteAll(){
-    document.getElementById("deleteAll").style.display = "none"
-}
+// function deleteAll(){
+//     document.getElementById("deleteAll").style.display = "none"
+// }
+
+
+
+
+// 4. Display an image in browser. Change the picture on mouseover and set the
+// first picture on mouseout.
+
+
+
+
+
+
+
+
+
+
 
 
 
