@@ -17,10 +17,34 @@
     <p id="result"></p> -->
 
     <!-- Q2 -->
-    <p id="para">
+    <!-- <p id="para">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit..
     </p>
-    <button onclick="readMore()">Read More</button>
+    <button onclick="readMore()">Read More</button> -->
+
+
+    <!-- Q3 -->
+      <input type="text" placeholder="Name" id="name" required>
+      <input type="text" placeholder="Age" id="age" required>
+      <input type="text" placeholder="Grade" id="grade" required>
+      <button type="submit" onclick="sumbitForm()">Submit</button>
+
+        <table id="studentTable" border="1">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td id="inName"></td>
+            <td id="inAge"></td>
+            <td id="inGrade"></td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+          </tr>
+
+
+
   </body>
   <script src="app.js"></script>
 </html>
