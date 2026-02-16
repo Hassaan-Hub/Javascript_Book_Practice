@@ -41,37 +41,37 @@
 // appear with the values of that row.
 
 
-function sumbitForm(){
-    var name = document.getElementById("name");
-    var age = document.getElementById("age");
-    var grade = document.getElementById("grade");
+// function sumbitForm(){
+//     var name = document.getElementById("name");
+//     var age = document.getElementById("age");
+//     var grade = document.getElementById("grade");
     
-    var inName = document.getElementById("inName");
-    var inAge = document.getElementById("inAge");
-    var inGrade = document.getElementById("inGrade");
+//     var inName = document.getElementById("inName");
+//     var inAge = document.getElementById("inAge");
+//     var inGrade = document.getElementById("inGrade");
 
-    if(name.value === "" || age.value === "" || grade.value === ""){
-        alert("Please fill all the fields");
-        return;
-    }
+//     if(name.value === "" || age.value === "" || grade.value === ""){
+//         alert("Please fill all the fields");
+//         return;
+//     }
 
-    var nameText = document.createTextNode(name.value);
-    var ageText = document.createTextNode(age.value);
-    var gradeText = document.createTextNode(grade.value);
+//     var nameText = document.createTextNode(name.value);
+//     var ageText = document.createTextNode(age.value);
+//     var gradeText = document.createTextNode(grade.value);
 
-    inName.appendChild(nameText);
-    inAge.appendChild(ageText);
-    inGrade.appendChild(gradeText);
+//     inName.appendChild(nameText);
+//     inAge.appendChild(ageText);
+//     inGrade.appendChild(gradeText);
     
-    name.value = "";
-    age.value = "";
-    grade.value = "";
-}
+//     name.value = "";
+//     age.value = "";
+//     grade.value = "";
+// }
 
-function deleteRow(button){
-    var row = button.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-}
+// function deleteRow(button){
+//     var row = button.parentNode.parentNode;
+//     row.parentNode.removeChild(row);
+// }
 
 
 
